@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dw5w6cbo07ar"]
+
+[ext_resource type="Script" uid="uid://c6lk0cv2plx3" path="res://play.gd" id="1_17ai2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 49
+
+[sub_resource type="LabelSettings" id="LabelSettings_l5mdd"]
+font_size = 28
+
+[node name="YouDies" type="Control" unique_id=183222166]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Control" type="ColorRect" parent="." unique_id=1955656299]
+layout_mode = 0
+offset_right = 1157.0
+offset_bottom = 654.0
+color = Color(0.5674154, 0, 0.067491226, 1)
+
+[node name="Control2" type="Label" parent="." unique_id=740710487]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 103.0
+offset_right = 878.0
+offset_bottom = 368.0
+text = "death is inevitable"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="Label" type="Label" parent="." unique_id=1070543688]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 351.0
+offset_right = 873.0
+offset_bottom = 374.0
+text = "you got the good ending..!"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Button" type="Button" parent="." unique_id=1623630687]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 407.0
+offset_right = 437.0
+offset_bottom = 491.0
+text = "play again"
+script = ExtResource("1_17ai2")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

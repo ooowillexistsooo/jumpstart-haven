@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://ctxq6nqnttgaf"]
+
+[ext_resource type="Script" uid="uid://0ptpvkdkcwtk" path="res://color_rect.gd" id="1_m2qn0"]
+[ext_resource type="Script" uid="uid://c6lk0cv2plx3" path="res://play.gd" id="2_pj211"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
+font_size = 26
+
+[node name="MeaningOfLife" type="Control" unique_id=2121226]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1069241149]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 650.0
+color = Color(0.6990956, 0.66959405, 0.8005165, 1)
+script = ExtResource("1_m2qn0")
+speed = 0.1
+
+[node name="Label" type="Label" parent="." unique_id=1255437101]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 25.0
+offset_right = 1149.0
+offset_bottom = 214.0
+text = "what even is the meaning of life?
+are we all just here, meaninglessly floating on this rock in space and time?
+or do we have a greater purpose?
+i dont know.
+is there a higher power controlling our very actions, is this all just a game
+for them?
+or do we have free will, the power to do whatever we wish?
+does it even matter?"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="Button" type="Button" parent="." unique_id=202974022]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 519.0
+offset_right = 606.3334
+offset_bottom = 605.0
+scale = Vector2(4.2774205, 1.2306715)
+text = "play again"
+script = ExtResource("2_pj211")
+
+[node name="Label2" type="Label" parent="." unique_id=935625940]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 489.0
+offset_right = 353.0
+offset_bottom = 603.0
+text = "you got the bad ending
+
+i guess"
+label_settings = SubResource("LabelSettings_1bvp3")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

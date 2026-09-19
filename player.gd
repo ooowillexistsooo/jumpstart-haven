@@ -1,9 +1,25 @@
 extends CharacterBody2D
 
+signal player_died
 
-const SPEED = 300.0
+var is_dead = false
+
+const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 
+func die(): 
+	if is_dead:
+		return
+	
+	is_dead = true;
+	emit_signal("player_died")
+	
+	set_physics_process(false)
+	
+	call_deferred("reload_level")
+
+func reload_level():
+	get_tree().reload_current_scene()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +39,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+@onready var animated_sprite = $AnimatedSprite2D
+
+func _process(_delta) -> void:
+	if Input.is_action_pressed("left"):
+		animated_sprite.play("left")
+	if Input.is_action_pressed("right"):
+		animated_sprite.play("right")
+	else:
+		animated_sprite.play("idle")

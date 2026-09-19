@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://do8tdh1h641e5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 33
+
+[node name="Credits" type="Control" unique_id=1972690664]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1407120102]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 655.0
+color = Color(0.37351346, 0.17700893, 0.20774117, 1)
+
+[node name="Label" type="Label" parent="." unique_id=2127588704]
+layout_mode = 0
+offset_left = 310.9999
+offset_top = 139.99997
+offset_right = 698.9999
+offset_bottom = 222.99997
+scale = Vector2(1.0963646, 1.502584)
+text = "ground assets and stuff
+https://bigbuckbunny.itch.io/platform-assets-pack"
+
+[node name="Label2" type="Label" parent="." unique_id=1072359228]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 82.0
+offset_right = 366.0
+offset_bottom = 105.0
+text = "credits"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="Button" type="Button" parent="." unique_id=39309731]
+layout_mode = 0
+offset_left = 16.000002
+offset_top = 16.0
+offset_right = 142.0
+offset_bottom = 65.0
+scale = Vector2(1.96, 12.720001)
+text = "go back"

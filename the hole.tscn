@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cs566oud88pub"]
+
+[ext_resource type="Script" uid="uid://c6lk0cv2plx3" path="res://play.gd" id="1_ldw8y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 31
+
+[sub_resource type="LabelSettings" id="LabelSettings_l5mdd"]
+font_size = 32
+
+[node name="TheHole" type="Control" unique_id=782969756]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=372406694]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(29.239998, 16.48)
+color = Color(0.25784922, 0.5748372, 0.37898156, 1)
+
+[node name="Label" type="Label" parent="." unique_id=598125580]
+layout_mode = 0
+offset_left = 299.0
+offset_top = 111.0
+offset_right = 1102.0
+offset_bottom = 155.0
+text = "you fell down the hole and died of oxygen deprivation"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="Label2" type="Label" parent="." unique_id=1734067615]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 252.0
+offset_right = 611.0
+offset_bottom = 275.0
+text = "you got the good ending"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Button" type="Button" parent="." unique_id=1711268053]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 368.0
+offset_right = 440.0
+offset_bottom = 399.0
+scale = Vector2(4.6800013, 1.6000001)
+text = "play again..?"
+script = ExtResource("1_ldw8y")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

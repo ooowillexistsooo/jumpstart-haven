@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://ckr4xyea0i42f"]
+
+[ext_resource type="Script" uid="uid://c6lk0cv2plx3" path="res://play.gd" id="1_7mewq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 30
+
+[node name="MainMenu" type="Control" unique_id=1714981254]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1070432053]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 666.0
+color = Color(0.24504095, 0.5049292, 0.5662652, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1497971615]
+layout_mode = 0
+offset_left = 212.0
+offset_top = 105.0
+offset_right = 653.0
+offset_bottom = 236.0
+text = "untitle platform game"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="Label2" type="Label" parent="." unique_id=1716431524]
+layout_mode = 0
+offset_left = 598.0
+offset_top = 150.0
+offset_right = 828.0
+offset_bottom = 173.0
+scale = Vector2(1.6800001, 6.84)
+text = "a game on the meaning of life"
+
+[node name="Button" type="Button" parent="." unique_id=57011600]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 283.0
+offset_right = 482.0
+offset_bottom = 427.0
+text = "play"
+script = ExtResource("1_7mewq")
+
+[node name="Button2" type="Button" parent="." unique_id=833525969]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 423.0
+offset_right = 879.0
+offset_bottom = 499.0
+text = "die"
+
+[node name="Label3" type="Label" parent="." unique_id=1616116738]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 470.0
+offset_right = 381.0
+offset_bottom = 649.0
+text = "epilepsy warning!!!
+
+i think
+
+just the meaning of life ending
+
+everything else is fine"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
