@@ -665,6 +665,23 @@ animations = [{
 "texture": SubResource("AtlasTexture_dg77c")
 }],
 "loop": 1,
+"name": &"lefet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kek77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4c57u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efxa6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dg77c")
+}],
+"loop": 1,
 "name": &"left",
 "speed": 5.0
 }, {
@@ -2261,7 +2278,7 @@ size = Vector2(13.189606, 41)
 [node name="background" type="ColorRect" parent="." unique_id=1596416684]
 offset_left = -291.0
 offset_top = -165.0
-offset_right = 1322.0
+offset_right = 1482.0
 offset_bottom = 767.0
 color = Color(0.5548616, 0.8192221, 1, 1)
 
@@ -2292,8 +2309,6 @@ position_smoothing_enabled = true
 texture_filter = 1
 scale = Vector2(2.6659813, 1)
 sprite_frames = SubResource("SpriteFrames_sgb84")
-animation = &"left"
-frame_progress = 0.6481242
 
 [node name="middleground" type="TileMapLayer" parent="." unique_id=1402806071]
 texture_filter = 1

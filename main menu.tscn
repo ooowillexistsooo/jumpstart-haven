@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ckr4xyea0i42f"]
 
 [ext_resource type="Script" uid="uid://c6lk0cv2plx3" path="res://play.gd" id="1_7mewq"]
+[ext_resource type="Script" uid="uid://65ncfc35l2yt" path="res://die.gd" id="2_bajiw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
 font_size = 30
@@ -53,6 +54,7 @@ offset_top = 423.0
 offset_right = 879.0
 offset_bottom = 499.0
 text = "die"
+script = ExtResource("2_bajiw")
 
 [node name="Label3" type="Label" parent="." unique_id=1616116738]
 layout_mode = 0
@@ -69,3 +71,4 @@ just the meaning of life ending
 everything else is fine"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

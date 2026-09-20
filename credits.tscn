@@ -44,3 +44,13 @@ offset_right = 142.0
 offset_bottom = 65.0
 scale = Vector2(1.96, 12.720001)
 text = "go back"
+
+[node name="Label3" type="Label" parent="." unique_id=1564902402]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 240.0
+offset_right = 692.0
+offset_bottom = 289.0
+scale = Vector2(1, 1.6000004)
+text = "character sprite 
+https://cupnooble.itch.io/sprout-lands-asset-pack"

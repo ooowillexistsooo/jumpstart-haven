@@ -44,8 +44,11 @@ func _physics_process(delta: float) -> void:
 
 func _process(_delta) -> void:
 	if Input.is_action_pressed("left"):
-		animated_sprite.play("left")
-	if Input.is_action_pressed("right"):
+		$AnimatedSprite2D.play("lefet")
+		print("hello ahem hem")
+	
+	elif Input.is_action_pressed("right"):
 		animated_sprite.play("right")
+		
 	else:
 		animated_sprite.play("idle")
